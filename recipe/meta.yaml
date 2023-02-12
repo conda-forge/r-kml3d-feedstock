@@ -1,4 +1,4 @@
-{% set version = '2.4.2' %}
+{% set version = "2.4.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/kml3d_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/kml3d/kml3d_{{ version }}.tar.gz
-  sha256: 499b0a6022a5869001625870f3e31afcd68890ffe4d31e64a022409da1c770a8
+  sha256: 4781ea537d17336e790886f97b8e650bdd46972ebcfda524c11edb6dca1a2b06
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -47,15 +47,11 @@ test:
 about:
   home: http:www.r-project.org
   license: GPL-2.0-or-later
-  summary: An implementation of k-means specifically design to cluster joint trajectories (longitudinal
-    data on several variable-trajectories). Like 'kml', it provides facilities to deal
-    with missing value, compute several quality criterion (Calinski and Harabatz, Ray
-    and Turie, Davies and Bouldin, BIC,...) and propose a graphical interface for choosing
-    the 'best' number of clusters. In addition, the 3D graph representing the mean joint-trajectories
-    of each cluster can be exported through LaTeX in a 3D dynamic rotating PDF graph.
+  summary: An implementation of k-means specifically design to cluster joint trajectories (longitudinal data on several variable-trajectories). Like 'kml', it provides facilities to deal with missing value, compute several quality criterion (Calinski and Harabatz, Ray and Turie, Davies and Bouldin, BIC,...) and propose a
+    graphical interface for choosing the 'best' number of clusters. In addition, the 3D graph representing the mean joint-trajectories of each cluster can be exported through LaTeX in a 3D dynamic rotating PDF graph.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
