@@ -1,11 +1,11 @@
-About r-kml3d
-=============
+About r-kml3d-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-kml3d-feedstock/blob/main/LICENSE.txt)
 
 Home: http:www.r-project.org
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-kml3d-feedstock/blob/main/LICENSE.txt)
 
 Summary: An implementation of k-means specifically design to cluster joint trajectories (longitudinal data on several variable-trajectories). Like 'kml', it provides facilities to deal with missing value, compute several quality criterion (Calinski and Harabatz, Ray and Turie, Davies and Bouldin, BIC,...) and propose a graphical interface for choosing the 'best' number of clusters. In addition, the 3D graph representing the mean joint-trajectories of each cluster can be exported through LaTeX in a 3D dynamic rotating PDF graph.
 
