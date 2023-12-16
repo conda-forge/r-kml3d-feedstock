@@ -1,4 +1,4 @@
-{% set version = "2.4.6" %}
+{% set version = "2.4.6.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/kml3d_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/kml3d/kml3d_{{ version }}.tar.gz
-  sha256: 4781ea537d17336e790886f97b8e650bdd46972ebcfda524c11edb6dca1a2b06
+  sha256: e440dc4a819357f059cb62896c3a03b219d5ae7f0dab00bdd1e6cd93aa4050d9
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
