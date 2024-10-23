@@ -1,4 +1,4 @@
-{% set version = "2.4.6.1" %}
+{% set version = "2.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/kml3d_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/kml3d/kml3d_{{ version }}.tar.gz
-  sha256: e440dc4a819357f059cb62896c3a03b219d5ae7f0dab00bdd1e6cd93aa4050d9
+  sha256: 84126dc8127c0b6fea6322a433d90cd4829a1f2e875a49f7cefc3af1a72d46f8
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
